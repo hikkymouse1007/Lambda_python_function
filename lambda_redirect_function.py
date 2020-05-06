@@ -18,7 +18,7 @@ def lambda_handler(event, context):
         'headers': {
             'location': [{
                 'key': 'Location',
-                'value': 'http://dbjx9ln2fk98l.cloudfront.net/1x1.gif'
+                'value': 'http://xxxxx.cloudfront.net/1x1.gif'
             }]
         }
     }
