@@ -13,5 +13,5 @@ def lambda_handler(event, context):
     }
 
     dynamo = boto3.client('dynamodb')
-    dynamo.put_item(TableName=table_name, Item=item)
-    return 
+    response = dynamo.put_item(TableName=table_name, Item=item)
+    return response
