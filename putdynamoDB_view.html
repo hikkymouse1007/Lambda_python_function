@@ -8,6 +8,8 @@
     <script type="text/javascript">
       window.addEventListener('DOMContentLoaded', () => {
         var request = new XMLHttpRequest();    
+        // add api-url below
+        // CORSの問題は未解決なので後日チェック
         request.open("GET", "https://xxxxxx.execute-api.ap-northeast-1.amazonaws.com/production/");
         request.responseType = 'json';
         request.send();
