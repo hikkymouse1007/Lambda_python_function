@@ -1,0 +1,23 @@
+<body>
+        <header>
+            <h1>API GateWay test</h1>
+        </header>
+　　<div>DynamoDB_Lambda_Test</div>
+        <script>
+            window.addEventListener('load', function(){
+                setInterval("PeriodicExecution()", 10000);
+            })
+
+            function PeriodicExecution(){
+                var request = new XMLHttpRequest();
+                request.open('GET', 'https://api_path/', true);
+                request.responseType = 'json';
+                request.onload = function () {
+                    var data = this.response;
+                    console.log(data);
+                    document.write(data);
+                };
+                request.send();
+                }
+        </script>
+    </body>

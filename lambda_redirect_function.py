@@ -13,7 +13,7 @@ def lambda_handler(event, context):
     obj = s3.Object(bucket,key)     # ⑧バケット名とパスを指定
     obj.put( Body=file_contents )   # ⑨バケットにファイルを出力
     response = {
-        'status': '302',
+        'status': '302',CORS
         'statusDescription': 'Found',
         'headers': {
             'location': [{
